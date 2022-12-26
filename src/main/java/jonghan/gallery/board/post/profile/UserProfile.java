@@ -1,4 +1,4 @@
-package jonghan.gallery.post.profile;
+package jonghan.gallery.board.post.profile;
 
 import java.util.Objects;
 import java.util.Optional;

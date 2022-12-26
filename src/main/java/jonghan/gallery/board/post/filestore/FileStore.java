@@ -1,4 +1,4 @@
-package jonghan.gallery.post.filestore;
+package jonghan.gallery.board.post.filestore;
 
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.services.s3.AmazonS3;

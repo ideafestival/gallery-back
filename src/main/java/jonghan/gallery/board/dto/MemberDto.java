@@ -1,6 +1,6 @@
-package jonghan.gallery.dto;
+package jonghan.gallery.board.dto;
 
-import jonghan.gallery.entity.Member;
+import jonghan.gallery.board.entity.Member;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -11,13 +11,12 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class MemberDto {
+
     private String name;
 
-    private String email;
     public Member toEntity(){
         return Member.builder()
                 .name(this.name)
-                .email(this.email)
                 .build();
     }
 }

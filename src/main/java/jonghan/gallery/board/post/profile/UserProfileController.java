@@ -1,4 +1,4 @@
-package jonghan.gallery.post.profile;
+package jonghan.gallery.board.post.profile;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;

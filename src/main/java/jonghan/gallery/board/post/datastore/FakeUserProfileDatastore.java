@@ -1,7 +1,7 @@
-package jonghan.gallery.post.datastore;
+package jonghan.gallery.board.post.datastore;
 
 
-import jonghan.gallery.post.profile.UserProfile;
+import jonghan.gallery.board.post.profile.UserProfile;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

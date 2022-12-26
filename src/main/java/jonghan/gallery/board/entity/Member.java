@@ -1,4 +1,4 @@
-package jonghan.gallery.entity;
+package jonghan.gallery.board.entity;
 
 
 import lombok.*;

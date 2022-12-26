@@ -1,9 +1,7 @@
-package jonghan.gallery.repository;
+package jonghan.gallery.board.repository;
 
-import jonghan.gallery.entity.Member;
+import jonghan.gallery.board.entity.Member;
 import org.springframework.data.jpa.repository.JpaRepository;
-
-import java.util.List;
 
 public interface MemberRepository extends JpaRepository<Member,String> {
 

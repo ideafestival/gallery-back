@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 
-
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
@@ -16,7 +15,7 @@ public class MemberDto {
 
     public Member toEntity(){
         return Member.builder()
-                .name(this.name)
+                .name(name)
                 .build();
     }
 }

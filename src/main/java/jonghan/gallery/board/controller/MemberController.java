@@ -25,8 +25,7 @@ public class MemberController {
     }
 
     @GetMapping("/mygallery")
-    public List<String> findPicture(){
-        return memberService.findPicture();
+    public void findPicture(){
     }
     @PostMapping("/mygallery")
     public void save(@RequestBody String picture){

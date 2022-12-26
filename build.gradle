@@ -30,6 +30,7 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	implementation platform('com.amazonaws:aws-java-sdk-bom:1.11.1000')
+	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client:2.6.2'
 	implementation 'com.amazonaws:aws-java-sdk-s3'
 }
 

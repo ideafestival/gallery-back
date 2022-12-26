@@ -11,9 +11,10 @@ import javax.persistence.Id;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Member {
-    private String name;
+public class Member{
     @Id
+    private String name;
+
     private String email;
 
 

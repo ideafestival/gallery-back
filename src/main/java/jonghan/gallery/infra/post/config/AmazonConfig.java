@@ -1,4 +1,4 @@
-package jonghan.gallery.board.post.config;
+package jonghan.gallery.infra.post.config;
 
 import com.amazonaws.auth.AWSCredentials;
 import com.amazonaws.auth.AWSStaticCredentialsProvider;

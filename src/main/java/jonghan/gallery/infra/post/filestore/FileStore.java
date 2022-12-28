@@ -1,4 +1,4 @@
-package jonghan.gallery.board.post.filestore;
+package jonghan.gallery.infra.post.filestore;
 
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.services.s3.AmazonS3;
@@ -38,9 +38,7 @@ public class FileStore {
             throw new IllegalStateException("Failed to store file to s3",e);
         }
 
-
     }
-
     public byte[] download(String path,String key) {
         try{
             S3Object object = s3.getObject(path, key);

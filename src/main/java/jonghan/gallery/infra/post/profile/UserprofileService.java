@@ -1,8 +1,8 @@
-package jonghan.gallery.board.post.profile;
+package jonghan.gallery.infra.post.profile;
 
 
-import jonghan.gallery.board.post.bucket.BucketName;
-import jonghan.gallery.board.post.filestore.FileStore;
+import jonghan.gallery.infra.post.bucket.BucketName;
+import jonghan.gallery.infra.post.filestore.FileStore;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;

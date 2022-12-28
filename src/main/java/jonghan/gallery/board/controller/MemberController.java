@@ -1,7 +1,7 @@
 package jonghan.gallery.board.controller;
 
 
-import jonghan.gallery.board.dto.MemberDto;
+import jonghan.gallery.board.dto.requestdto.MemberDto;
 import jonghan.gallery.board.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -19,17 +19,20 @@ public class MemberController {
         this.memberService = memberService;
     }
 
-    @PostMapping("/login/name")
-    public void signUp(@RequestBody MemberDto name){
-        memberService.signUp(name);
+    @PostMapping("/login")
+    public MemberDto login(MemberDto memberDto){
+        memberService.memberDtoSave(memberDto);
+        return memberDto;
     }
 
-    @GetMapping("/mygallery")
-    public void findPicture(){
+
+    @PostMapping("/gallery/{name}")
+    public void save(@PathVariable("name") String name,@RequestBody String picture){
+        memberService.PictureSave(name,picture);
     }
-    @PostMapping("/mygallery")
-    public void save(@RequestBody String picture){
-        memberService.save(picture);
+    @GetMapping("/gallery/{name}")
+    public List<String> findPicture(@PathVariable("name")String name){
+        return memberService.findPicture(name);
     }
 
 

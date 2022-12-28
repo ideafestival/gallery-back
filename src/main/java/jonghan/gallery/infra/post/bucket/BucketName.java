@@ -1,4 +1,4 @@
-package jonghan.gallery.board.post.bucket;
+package jonghan.gallery.infra.post.bucket;
 
 public enum BucketName {
     PROFILE_IMAGE("ap-northeast-2");

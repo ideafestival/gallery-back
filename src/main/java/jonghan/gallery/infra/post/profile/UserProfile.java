@@ -1,4 +1,4 @@
-package jonghan.gallery.board.post.profile;
+package jonghan.gallery.infra.post.profile;
 
 import java.util.Objects;
 import java.util.Optional;
@@ -8,7 +8,6 @@ public class UserProfile {
     private UUID userProfileId;
     private String username;
     private String userProfileImageLink;
-
     public UserProfile(UUID userProfileId, String username,String userProfileImageLink) {
         this.userProfileId = userProfileId;
         this.username = username;

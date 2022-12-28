@@ -1,4 +1,4 @@
-package jonghan.gallery.board.post.profile;
+package jonghan.gallery.infra.post.profile;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -12,9 +12,7 @@ import java.util.UUID;
 @RequestMapping("api/v1/user-profile")
 @CrossOrigin("*")
 public class UserProfileController {
-
     private final UserprofileService userprofileService;
-
 
     @Autowired
     public UserProfileController(UserprofileService userprofileService) {
